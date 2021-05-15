@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- LINKS -->
+    <link rel="stylesheet" href="./lesson02.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Center Text with Bootstrap</title>
+  </head>
+  <body>
+    <!-- CLASS NOTES -->
+    <!-- 
+      Now that we're using Bootstrap, we can center our heading element to make it look better. 
+      All we need to do is add the class text-center to our h2 element.
+
+      Remember that you can add several classes to the same element by separating each of them 
+      with a space, like this:
+
+      <h2 class="red-text text-center">your text</h2>
+
+     -->
+    <!-- END CLASS NOTES -->
+
+    <div class="container-fluid">
+      <h2 class="red-text text-center">CatPhotoApp</h2>
+
+      <p>Click here for <a href="#">cat photos</a>.</p>
+
+      <a href="#"
+        ><img
+          class="smaller-image thick-green-border"
+          src="https://bit.ly/fcc-relaxing-cat"
+          alt="A cute orange cat lying on its back."
+      /></a>
+      <a href="#"
+        ><img
+          class="img-responsive"
+          src="https://bit.ly/fcc-running-cats."
+          alt=""
+      /></a>
+      <p>Things cats love:</p>
+      <ul>
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+      </ul>
+      <p>Top 3 things cats hate:</p>
+      <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+      </ol>
+      <form action="https://freecatphotoapp.com/submit-cat-photo">
+        <label><input type="radio" name="indoor-outdoor" /> Indoor</label>
+        <label><input type="radio" name="indoor-outdoor" /> Outdoor</label>
+        <label><input type="checkbox" name="personality" /> Loving</label>
+        <label><input type="checkbox" name="personality" /> Lazy</label>
+        <label><input type="checkbox" name="personality" /> Crazy</label>
+        <input type="text" placeholder="cat photo URL" required />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
